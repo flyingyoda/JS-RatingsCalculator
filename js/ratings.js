@@ -12,8 +12,7 @@ function collect_ratings() {
 
     elements.forEach(function (element) {
 
-        const note = element.id.replace('star', '');
-        rating = parseInt(note);
+        rating = parseInt(element.id.replace('star', ''));
         ratings.count += parseInt(element.value);
         ratings.sum += rating * parseInt(element.value);
 
